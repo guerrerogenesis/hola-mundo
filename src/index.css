@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  margin:0;
+  background:#222;
+  font-family: system-ui;
+  place-content: center;
+  min-height: 100vh;
+  color: aliceblue;
+}
