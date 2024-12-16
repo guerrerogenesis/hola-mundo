@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 const TwitterFollowCard = (props) => {
-  const { name, username } = props;
-  const [isFollowing, setIsFollowing] = useState(false);
+  const { name, username, initialIsFollowing, userImage } = props;
+  const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
 
   console.log(props);
   return (
@@ -16,7 +16,7 @@ const TwitterFollowCard = (props) => {
         <img
           className="m-2 rounded-full h-12 w-12 object-coverç"
           alt="avatar"
-          src={`https://unavatar.io/${username}`}
+          src={userImage}
         ></img>
         <div className="flex flex-col ">
           <strong>{name}</strong>
@@ -27,8 +27,8 @@ const TwitterFollowCard = (props) => {
         <button
           onClick={() => setIsFollowing(!isFollowing)}
           className={classNames(
-            "mx-4 bg-white text-black rounded-lg px-2 cursor-pointer ",
-            !isFollowing ? "hover:bg-blue-300" : "hover:bg-red-600"
+            "mx-4 bg-white text-black rounded-lg px-2 cursor-pointer border border-white hover:text-white",
+            !isFollowing ? "hover:bg-blue-300" : "bg-transparent hover:bg-red-600 "
           )}
         >
           {!isFollowing ? "Seguir" : "Siguiendo"}
@@ -41,5 +41,7 @@ const TwitterFollowCard = (props) => {
 TwitterFollowCard.propTypes = {
   name: PropTypes.string,
   username: PropTypes.string,
+  initialIsFollowing: PropTypes.boolean,
+  userImage: PropTypes.string
 };
 export default TwitterFollowCard;

@@ -1,11 +1,9 @@
-import TwitterFollowCard from "./TwitterFollowCard";
+import TwitterFollowExample from "./Frontend-projects/TwitterCardExample/TwitterCardsExample";
 
 function App() {
   return (
     <>  
-      <TwitterFollowCard username={"GeneGuerrero"} name={"Genesis Guerrero"} hasFollow={true} />
-      <TwitterFollowCard username={"ciruelo"} name={"Ciruelo Cruz Guerrero"} hasFollow={false}/>
-      <TwitterFollowCard username={"midudev"} name={"Miguel Angel Duran"} hasFollow={false}/>
+      <TwitterFollowExample />
     </>
   );
 }

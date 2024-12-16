@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Tait Jenton",
+    "username": "tjenton0",
+    "isFollowing": false,
+    "imgProfile": "http://dummyimage.com/89x81.png/dddddd/000000"
+  },
+  {
+    "id": 2,
+    "name": "Ashley Conyard",
+    "username": "aconyard1",
+    "isFollowing": true,
+    "imgProfile": "http://dummyimage.com/99x87.png/5fa2dd/ffffff"
+  },
+  {
+    "id": 3,
+    "name": "Jackie Ead",
+    "username": "jead2",
+    "isFollowing": false,
+    "imgProfile": "http://dummyimage.com/69x58.png/ff4444/ffffff"
+  },
+  {
+    "id": 4,
+    "name": "Zorine Belloch",
+    "username": "zbelloch3",
+    "isFollowing": false,
+    "imgProfile": "http://dummyimage.com/78x51.png/5fa2dd/ffffff"
+  },
+  {
+    "id": 5,
+    "name": "Cory Fardon",
+    "username": "cfardon4",
+    "isFollowing": true,
+    "imgProfile": "http://dummyimage.com/52x89.png/dddddd/000000"
+  },
+  {
+    "id": 6,
+    "name": "Bernard Cricket",
+    "username": "bcricket5",
+    "isFollowing": false,
+    "imgProfile": "http://dummyimage.com/89x80.png/ff4444/ffffff"
+  },
+  {
+    "id": 7,
+    "name": "Eula Renehan",
+    "username": "erenehan6",
+    "isFollowing": true,
+    "imgProfile": "http://dummyimage.com/57x60.png/ff4444/ffffff"
+  },
+  {
+    "id": 8,
+    "name": "Tiffani Tiddy",
+    "username": "ttiddy7",
+    "isFollowing": false,
+    "imgProfile": "http://dummyimage.com/76x77.png/dddddd/000000"
+  },
+  {
+    "id": 9,
+    "name": "Maiga Woodburne",
+    "username": "mwoodburne8",
+    "isFollowing": false,
+    "imgProfile": "http://dummyimage.com/55x62.png/5fa2dd/ffffff"
+  },
+  {
+    "id": 10,
+    "name": "Jessy Dallin",
+    "username": "jdallin9",
+    "isFollowing": true,
+    "imgProfile": "http://dummyimage.com/76x78.png/cc0000/ffffff"
+  }
+]
