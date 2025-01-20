@@ -1,9 +1,11 @@
-import TwitterFollowExample from "./Frontend-projects/TwitterCardExample/TwitterCardsExample";
+// import TwitterFollowExample from "./TwitterCardExample/TwitterCardsExample";
+import GatoGame from "./GatoGame/GatoGameIndex";
 
 function App() {
   return (
     <>  
-      <TwitterFollowExample />
+      {/* <TwitterFollowExample /> */}
+      <GatoGame />
     </>
   );
 }

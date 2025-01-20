@@ -6,7 +6,6 @@ const TwitterFollowCard = (props) => {
   const { name, username, initialIsFollowing, userImage } = props;
   const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
 
-  console.log(props);
   return (
     <article
       id={`userId-${username}`}
@@ -27,7 +26,7 @@ const TwitterFollowCard = (props) => {
         <button
           onClick={() => setIsFollowing(!isFollowing)}
           className={classNames(
-            "mx-4 bg-white text-black rounded-lg px-2 cursor-pointer border border-white hover:text-white",
+            "mx-4 bg-white text-black rounded-lg px-2 cursor-pointer  hover:text-white",
             !isFollowing ? "hover:bg-blue-300" : "bg-transparent hover:bg-red-600 "
           )}
         >
