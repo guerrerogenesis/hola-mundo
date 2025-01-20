@@ -5,14 +5,17 @@ import confetti from "canvas-confetti";
 import { TURNS } from "./constants";
 import { checkWinner, checkEndGame } from "../utils/gatogame";
 
-
 const GatoGameIndex = () => {
-  const [board, setBoard] = useState(Array(9).fill(null));
-  const [turn, setTurn] = useState(TURNS.X);
+  const [board, setBoard] = useState(() => {
+    const boardFromStorage = window.localStorage.getItem("board");
+    if (boardFromStorage) return JSON.parse(boardFromStorage);
+    return Array(9).fill(null);
+  });
+  const [turn, setTurn] = useState(() => {
+    const turnFromStorage = window.localStorage.getItem("turn");
+    return turnFromStorage ?? TURNS.X;
+  });
   const [winner, setWinner] = useState(null); //false es empate, null no hay ganador.
-
-  
-  
 
   const updateBoard = (index) => {
     // no se actualiza la celda si ya hay un valor o si ya hay ganador
@@ -26,6 +29,8 @@ const GatoGameIndex = () => {
     //cambiar el turno
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X;
     setTurn(newTurn);
+    window.localStorage.setItem("board", JSON.stringify(newBoard));
+    window.localStorage.setItem("turn", newTurn);
 
     //revisar si hay ganador
     const newWinner = checkWinner(newBoard);
@@ -41,6 +46,9 @@ const GatoGameIndex = () => {
     setBoard(Array(9).fill(null));
     setTurn(TURNS.X);
     setWinner(null);
+    window.localStorage.removeItem('board');
+    window.localStorage.removeItem('turn');
+
   };
 
   return (
